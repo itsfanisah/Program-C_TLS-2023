@@ -1,0 +1,25 @@
+#include <iostream>
+#include <cmath>
+
+int main() {
+    // Define constants for pi
+    const double pi = 3.141592653589793;
+
+    // Declare variables for radius and height
+    double radius, height;
+
+    // Prompt the user for input
+    std::cout << "Enter the radius of the tube (cylinder): ";
+    std::cin >> radius;
+
+    std::cout << "Enter the height of the tube (cylinder): ";
+    std::cin >> height;
+
+    // Calculate the volume of the tube
+    double volume = pi * std::pow(radius, 2) * height;
+
+    // Print the result
+    std::cout << "The volume of the tube (cylinder) is: " << volume << std::endl;
+
+    return 0;
+}
